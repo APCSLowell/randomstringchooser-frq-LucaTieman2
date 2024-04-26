@@ -4,7 +4,7 @@ public class RandomStringChooser
   private ArrayList <String> word;
   public RandomStringChooser (String [] str) {
     word = new ArrayList<String>();
-    for (int i = 0; i < str.length; i++) {
+    for (String i = 0; i < str.length; i++) {
       word.add(i);
     }
   }
@@ -13,7 +13,7 @@ public class RandomStringChooser
     if (word.size() == 0) {
       return "NONE";
     } else {
-      int t = (int)(Math.random() * word.size());
+      String t = (int)(Math.random() * word.size());
       return word.remove(i);
     }
   }
